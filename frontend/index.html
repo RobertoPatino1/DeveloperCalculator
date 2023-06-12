@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet" />
+        <!-- MDB -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- Barra de navegación -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-12">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Calculadora</a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarToggleExternalContent2"
+                                aria-controls="navbarToggleExternalContent1"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars text-dark"></i>
+                            </button>
+
+                        </div>
+                    </nav>
+                    <div class="collapse" id="navbarToggleExternalContent2">
+                        <ul class="bg-light shadow-3 py-2 px-3">
+                            <li
+                                class="btn btn-link btn-block m-0 p-2 text-start text-dark">Inicio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario  -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-12 mt-5">
+                    <form id="formulario">
+
+                        <div class="row mb-4 d-flex justify-content-center">
+                            
+                            <!-- Valor por hora -->
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="valorPorHora"
+                                        step="0.25" required="required"
+                                        class="form-control" />
+                                    <label class="form-label" for="valorPorHora">Valor
+                                        por hora ($)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 d-flex justify-content-center">
+                            
+                            <!-- Elemento 1: Diseño de interfaz -->
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="interfazHoras"
+                                        class="form-control" />
+                                    <label class="form-label" for="interfazHoras">Diseño
+                                        de interfaz (horas)</label>
+                                </div>
+                            </div>
+
+                            <!-- Elemento 2: Testing -->
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="testingHoras"
+                                        class="form-control" />
+                                    <label class="form-label" for="testingHoras">Testing (horas)</label>
+                                </div>
+                            </div>
+                            <!-- Elemento 3: Deployment -->
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="deploymentHoras"
+                                        class="form-control" />
+                                    <label class="form-label" for="deploymentHoras">Deployment (horas)</label>
+                                </div>
+                            </div>
+                            <!-- Elemento 4: Mantenimiento -->
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="mantenimientoHoras"
+                                        class="form-control" />
+                                    <label class="form-label" for="mantenimientoHoras">Mantenimiento (horas)</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="row mb-4 d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <button type="submit"
+                                    class="btn btn-primary btn-block">Calcular</button>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <input
+                                    class="form-control"
+                                    id="valorTotal"
+                                    type="text"
+                                    placeholder="Valor total"
+                                    aria-label="disabled input example"
+                                    disabled />
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- MDB -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+
+        <!-- javascript:src public/javascript/calculadora.js -->
+        <script src="public/javascript/calculadora.js"></script>
+        
+
+
+    </body>
+</html>
